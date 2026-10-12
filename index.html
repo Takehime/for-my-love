@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff4f3">
+  <meta name="description" content="Маленькое тёплое место, которое напоминает: даже на расстоянии ты любима.">
+  <title>Тебе, моя любимая ♡</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=3">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="На главную">
+      <span class="brand-heart">♥</span>
+      <span>наше маленькое место</span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#letter">письмо</a>
+      <a href="#when">когда грустно</a>
+      <a href="#promises">обещания</a>
+    </nav>
+    <button class="night-toggle" id="nightToggle" type="button" aria-pressed="false" title="Включить ночной режим">
+      <span aria-hidden="true">☾</span><span class="toggle-label">ночник</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> сделано с любовью, специально для тебя</div>
+        <h1>Даже если я<br>далеко <em>я рядом.</em></h1>
+        <p class="hero-lede">Здесь живёт частичка меня. Открывай это место, когда захочется обняться услышать что-то доброе или просто вспомнить как сильно ты любима.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#letter">Прочитать моё письмо <span aria-hidden="true">↗</span></a>
+          <button class="button button-quiet" type="button" id="hugButton"><span aria-hidden="true">♡</span> получить обнимашку</button>
+        </div>
+        <div class="signature-note"><span class="tiny-heart">♥</span><span>для моей самой любимой девочки</span></div>
+      </div>
+
+      <div class="hero-art" aria-label="Иллюстрация конверта с любовным письмом">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✧</span><span class="sparkle sparkle-three">✦</span>
+        <div class="moon-shape"></div>
+        <div class="letter-shadow"></div>
+        <div class="envelope" id="heroEnvelope">
+          <div class="envelope-back"></div>
+          <div class="letter-paper">
+            <span class="paper-top">для тебя</span>
+            <span class="paper-heart">♥</span>
+            <span class="paper-small">от всего моего сердца</span>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="wax-seal">♥</div>
+        </div>
+        <div class="floating-note note-top"><span class="note-icon">☁</span><span>ты — моё<br>спокойствие</span></div>
+        <div class="floating-note note-bottom"><span class="note-icon">♡</span><span>сколько бы ни было<br>километров</span></div>
+        <div class="art-caption">маленькое письмо на большой год <span>✿</span></div>
+      </div>
+
+      <a class="scroll-cue" href="#our-time" aria-label="Листать вниз"><span></span> листай, тут много любви</a>
+    </section>
+
+    <section class="time-section section-wrap" id="our-time">
+      <div class="section-heading centered">
+        <span class="section-kicker">и это только начало</span>
+        <h2>Наша история <em>началась</em></h2>
+        <p>С того самого дня, который я хочу помнить всегда.</p>
+      </div>
+      <div class="time-card">
+        <div class="date-stamp"><span>НАША ДАТА</span><strong>29<span>·</span>03<span>·</span>2026</strong><small>день, когда мы стали «мы»</small></div>
+        <div class="time-divider"><span>♥</span></div>
+        <div class="time-count"><div class="count-label">Мы вместе уже</div><div class="count-number" id="daysTogether">—</div><div class="count-caption">дней общей истории</div><div class="count-sub" id="togetherSub">И каждый из них — часть нас.</div></div>
+      </div>
+      <p class="time-footnote"><span>✿</span> Даже за 1000км я люблю тебя очень сильно</p>
+    </section>
+
+    <section class="letter-section section-wrap" id="letter">
+      <div class="section-heading">
+        <span class="section-kicker">открой, когда будет тихо</span>
+        <h2>Письмо, которое<br><em>можно перечитывать.</em></h2>
+      </div>
+      <div class="letter-layout">
+        <div class="letter-side-note"><span class="side-heart">♡</span><span>прочитай<br>не спеша</span><div class="side-line"></div><small>01 / от меня тебе</small></div>
+        <article class="letter-card">
+          <div class="letter-card-top"><span>моей любимой</span><span class="letter-date">с любовью, всегда ♡</span></div>
+          <div class="letter-content">
+            <p class="letter-greeting">Моя хорошая,</p>
+            <p>Я сделал это место, чтобы у тебя был маленький кусочек меня даже в те дни когда я не смогу быть рядом и обнять тебя так крепко как мне хочется.</p>
+            <p>Я знаю что впереди у нас будет расстояние. Иногда дни могут тянуться долго настроение падать а обычные мелочи напоминать о том, как сильно хочется просто оказаться рядом. И в такие моменты пожалуйста помни: <strong>я тебя очень и очень сильно люблю</strong></p>
+            <p>Когда станет особенно одиноко представь что я рядом обнимаю тебя целую в губы и тихонько говорю что мы справимся и все сможем.</p>
+            <p>Пока меня нет рядом продолжай жить мечтать радоваться своим маленьким победам и заботиться о себе. Рассказывай мне обо всём. Твои обычные дни тоже важны. Ты важна. Всегда для меня.</p>
+            <p>Я очень хочу через год открыть этот сайт уже рядом с тобой улыбнуться тому как мы пережили этот год и наконец заменить все виртуальные обнимашки настоящими.</p>
+            <p class="letter-final">До нашей встречи всегда помни что ты для меня важнее всех на свете моя жопсик.<br>А я буду беречь нашу любовь даже когда далеко. ♡</p>
+            <div class="letter-sign">Твой человек <span>♥</span></div>
+          </div>
+          <div class="letter-card-bottom"><span>если скучаешь  возвращайся сюда</span><span class="tiny-stamp">С ЛЮБОВЬЮ · 2026</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="comfort-section section-wrap" id="when">
+      <div class="section-heading centered">
+        <span class="section-kicker">я оставил тебе немного тепла</span>
+        <h2>Открой, <em>когда…</em></h2>
+        <p>Выбери то, что чувствуешь сейчас. Здесь для тебя найдутся слова.</p>
+      </div>
+      <div class="comfort-grid">
+        <button class="comfort-card card-rose" data-message="miss" type="button"><span class="comfort-illustration">♡</span><span class="comfort-title">ты очень скучаешь</span><span class="comfort-desc">немного близости на расстоянии</span><span class="card-arrow">открыть письмо ↗</span></button>
+        <button class="comfort-card card-lilac" data-message="sad" type="button"><span class="comfort-illustration">☁</span><span class="comfort-title">день совсем не задался</span><span class="comfort-desc">тебе не нужно справляться со всем сразу</span><span class="card-arrow">открыть письмо ↗</span></button>
+        <button class="comfort-card card-peach" data-message="anxious" type="button"><span class="comfort-illustration">✧</span><span class="comfort-title">тебе тревожно</span><span class="comfort-desc">давай на минутку выдохнем</span><span class="card-arrow">открыть письмо ↗</span></button>
+        <button class="comfort-card card-blue" data-message="sleep" type="button"><span class="comfort-illustration">☾</span><span class="comfort-title">не получается уснуть</span><span class="comfort-desc">тихое пожелание спокойной ночи</span><span class="card-arrow">открыть письмо ↗</span></button>
+        <button class="comfort-card card-yellow" data-message="proud" type="button"><span class="comfort-illustration">✿</span><span class="comfort-title">тебе нужна поддержка</span><span class="comfort-desc">напоминание о том, какая ты умница</span><span class="card-arrow">открыть письмо ↗</span></button>
+        <button class="comfort-card card-mint" data-message="smile" type="button"><span class="comfort-illustration">☻</span><span class="comfort-title">хочется улыбнуться</span><span class="comfort-desc">маленькая порция нежности</span><span class="card-arrow">открыть письмо ↗</span></button>
+      </div>
+      <div class="daily-note"><div class="daily-icon">✉</div><div><span class="daily-label">маленькая мысль на сегодня</span><p id="dailyMessage">Тебе не нужно заслуживать любовь. Ты достойна её просто потому, что ты — это ты.</p></div><button id="newDailyMessage" class="round-button" type="button" aria-label="Другое доброе послание" title="Прочитать ещё одно послание">↻</button></div>
+    </section>
+
+    <section class="promises-section section-wrap" id="promises">
+      <div class="promise-intro">
+        <span class="section-kicker">что я хочу, чтобы ты знала</span>
+        <h2>Маленькие <em>обещания.</em></h2>
+        <p>Не громкие слова ради красивого момента, а вещи, о которых я хочу помнить даже на расстоянии.</p>
+      </div>
+      <div class="promise-list">
+        <div class="promise-item"><span class="promise-number">01</span><div><h3>Слушать тебя</h3><p>Всегда и прислушиваться к тебе</p></div><span class="promise-heart">♡</span></div>
+        <div class="promise-item"><span class="promise-number">02</span><div><h3>Обещаю тебе</h3><p>Что мы пройдем этот путь вместе всю армию и я вернусь к тебе как и обещал </p></div><span class="promise-heart">♡</span></div>
+        <div class="promise-item"><span class="promise-number">03</span><div><h3>И обещаю тебе</h3><p>Никогда не изменять не искать никого до во время и после армии, ты моя одна единственная любовь</p></div><span class="promise-heart">♡</span></div>
+        <div class="promise-item"><span class="promise-number">04</span><div><h3>Обещай мне так же</h3><p>и всегда помни об этом</p></div><span class="promise-heart">♡</span></div>
+      </div>
+    </section>
+
+    <section class="hug-section section-wrap">
+      <div class="hug-card">
+        <div class="hug-doodle" aria-hidden="true"><span>♡</span><span>✦</span><span>♡</span></div>
+        <div class="hug-copy"><span class="section-kicker">обнимемся хотя бы так</span><h2>Иди сюда.<br><em>Обнимаю крепко.</em></h2><p>Нажми на кнопку и представь, что я на секунду оказался рядом и никуда не тороплюсь.</p><button class="button button-primary" id="bigHugButton" type="button">обнять меня в ответ ♡</button><div class="hug-response" id="hugResponse" aria-live="polite"></div></div>
+        <div class="hug-heart-art" aria-hidden="true"><div class="heart-glow"></div><div class="big-heart">♥</div><span class="hug-spark hs-one">✦</span><span class="hug-spark hs-two">✧</span><span class="hug-spark hs-three">·</span></div>
+      </div>
+    </section>
+    <section class="love-gallery" id="our-photos">
+  <div class="love-gallery__heading">
+    <span class="love-gallery__heart">♡</span>
+    <h2>Наши маленькие моменты</h2>
+    <p>
+      Каждая фотография маленькая история,
+      которую я хочу хранить вместе с тобой.
+    </p>
+  </div>
+
+  <div class="love-gallery__grid">
+
+    <a class="love-gallery__item"
+       href="images/our-01.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-01.jpg"
+           alt="Наше совместное фото 1"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-02.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-02.jpg"
+           alt="Наше совместное фото 2"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-03.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-03.jpg"
+           alt="Наше совместное фото 3"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-04.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-04.jpg"
+           alt="Наше совместное фото 4"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-05.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-05.jpg"
+           alt="Наше совместное фото 5"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-06.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-06.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-07.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-07.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-08.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-08.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-09.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-09.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-10.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-10.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-11.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-11.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-12.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-12.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-13.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-13.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-14.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-14.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-15.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-15.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-16.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-16.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-17.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-17.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-18.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-18.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+    <a class="love-gallery__item"
+       href="images/our-19.jpg"
+       target="_blank" rel="noopener">
+      <img src="images/our-19.jpg"
+           alt="Наше совместное фото 6"
+           loading="lazy" decoding="async">
+    </a>
+
+  </div>
+
+  <p class="love-gallery__footer">
+    Расстояние между нами  это не расстояние между сердцами. ♡
+  </p>
+</section>
+
+    <section class="final-section section-wrap">
+      <div class="final-star">✧</div>
+      <p class="final-overline">на всякий случай — ещё раз</p>
+      <h2>Ты любимая.<br>Ты не одна.<br><em>И мы ещё обнимемся.</em></h2>
+      <p class="final-small">Возвращайся сюда в любой день. Это место никуда не денется.</p>
+      <a class="back-top" href="#home">в начало, к нашему письму ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer"><span>сделано с любовью</span><span class="footer-heart">♥</span><span>для тебя · навсегда в закладках</span></footer>
+
+  <div class="modal" id="messageModal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Закрыть письмо">×</button>
+      <div class="modal-flower" id="modalFlower">♡</div>
+      <span class="modal-eyebrow">маленькое письмо для тебя</span>
+      <h2 id="modalTitle">Моя хорошая</h2>
+      <p id="modalText"></p>
+      <div class="modal-sign">обнимаю тебя мысленно <span>♥</span></div>
+      <button class="button button-primary modal-done" type="button" data-close-modal>забрать тепло с собой</button>
+    </section>
+  </div>
+
+  <div class="toast" id="hugToast" role="status" aria-live="polite">Обнимашка доставлена ♡</div>
+  <div class="heart-rain" id="heartRain" aria-hidden="true"></div>
+</body>
+</html>
